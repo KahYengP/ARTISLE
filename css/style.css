@@ -130,6 +130,12 @@ button:hover {
     border-bottom: 0.3em solid;
   }
 }
+
+@media  screen and (max-width: 300px) {
+    #video{
+        margin-top: 0;
+    }
+}
 .pb-5, .py-5 {
     padding-bottom: 0;
 }
@@ -155,7 +161,59 @@ button:hover {
 #bar.active {
     color: #fff;
 }
+@media only screen and (min-width: 1230px) {
+    #video{margin-top: 330px;}
 
+}
+
+@media only screen and (max-width: 1200px) {
+    #video{margin-top: 10px;}
+
+}
+
+@media only screen and (min-width: 600px) {
+    #video{margin-bottom: 10px;}
+
+}
+@media only screen and (max-width: 500px) {
+
+    #video{
+        margin-top: -10px;
+        margin-bottom: 20px;}
+
+}
+@media only screen and (max-width: 420px) {
+
+    #video{
+        margin-top: -10px;
+        margin-bottom: 20px;}
+
+}
+@media only screen and (max-width: 380px) {
+
+    #video{
+        margin-top: -140px;
+        margin-bottom: 20px;}
+
+}
+@media only screen and (max-width: 550px) {
+
+    #video{
+        margin-top: -10px;
+        margin-bottom: 100px;}
+
+}
+@media only screen and (min-width: 550px) {
+
+    #video{
+        margin-top: -20px;
+        margin-bottom: 100px;}
+
+}
+
+@media only screen and (max-width: 960px) {
+    #video{margin-top: 0px}
+}
 @media only screen and (max-width: 991px) {
     body>nav>div>button:hover,
     body>nav>div>button:focus {
@@ -174,10 +232,7 @@ button:hover {
     #navbarSupportedContent>ul>li:nth-child(n)>a {
         padding: 10px 0;
     }
-    #video{
-        padding-top: 30px;
 
-    }
 
 }
 
