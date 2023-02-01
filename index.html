@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTISLE</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/logoImage/logo-Icon.png"> 
+    
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div class="navbar1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+            <div class="container">
+                <img src="logoImage/logo-Icon.png" alt="logo icon" width="40" height="49" style="padding-bottom: 6px;">
+                <a href="index.html"><img src="logoImage/logo.png" alt="logo image" width="175" height="60" style="padding-top:15px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Category
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Paint</a>
+                                <a class="dropdown-item" href="#"> Brushes</a>
+                                <a class="dropdown-item" href="#"> Pencil</a>
+                                <a class="dropdown-item" href="#"> Palette</a>
+                                <a class="dropdown-item" href="#"> Paper</a>
+                                <a class="dropdown-item" href="#"> Oil</a>
+                            
+                            </div>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">About</a>
+                        </li>
+
+                        <li class="nav-item search">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <i class="fal fa-search"></i>
+                                </form>
+                        </li>
+                        <li class="nav-item search">
+                            <i onclick="window.location.href='cart.html';" class="fal fa-shopping-bag"></i>
+                        </li>
+
+                        <li class="nav-item profile">
+                          <i onclick="handleProfileClick()" class="fal fa-user"></i>
+                        </li>
+
+                        <li class="nav-item profile">
+                            <button class="nav-link" onclick="handleLogoutClick()">Logout</button>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section id="home">
+        <video muted src="videoPromotion/Fine Art Commercial.mp4" class="object-fit-contain" id="video" style="width: 100%; max-height: 800px; margin-top: 20px;" autoplay loop></video>
+        <div class="container promotion">
+            <h5>NEW ARRIVALS</h5>
+            <h1><span> Best Price</span> This Year </h1>
+            <p>We offer you the best and affordable<br> handicrafts in the market</p>
+            <button class="text-uppercase shop">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="newproducts" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>New Products</h3>
+            <hr class="mx-auto">
+            <p>Here you can check out our new products at an affordable price on ARTISLE.</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/brushes1-deli.jpg" alt="">
+                <h5 class="p-name">Deli Gouache Brush Set of 4s</h5>
+                <h4 class="p-price">$5.50</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/oil3-fc-pastels.jpg" alt="">
+                <h5 class="p-name">Faber Castell Oil Pastels 12 Colours</h5>
+                <h4 class="p-price"> $4.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/pencil2-mm-watercolour.png" alt="">
+                <h5 class="p-name">Mont Marte Watercolour Pencils 36pc</h5>
+                <h4 class="p-price">$25.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/palette1-mm-wooden.jpg" alt="">
+
+                <h5 class="p-name">Mont Marte Oval Plastic Palette</h5>
+                <h4 class="p-price">$5.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="newproducts1" class="my-5">
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/oil1-w&n-linseed.jpg" alt="">
+                <h5 class="p-name">Winsor & Newton Refined Linseed Oil 75ml</h5>
+                <h4 class="p-price">$6.50</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/pencil1-fc-watercolour.jpg" alt="">
+                
+                <h5 class="p-name">Faber Castell Watercolor Pencils Box 24 Colours</h5>
+                <h4 class="p-price">$12.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/paint3-mm-acrylic.jpg" alt="">
+                <h5 class="p-name">Mont Marte Premium Pouring Acrylic Paint 240ml</h5>
+                <h4 class="p-price">$10.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="products/paper2-fc-drawing.jpg" alt="">
+                <h5 class="p-name">FaberCastell A4 Size Drawing Block 20 Sheets</h5>
+                <h4 class="p-price">$2.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="my-5 py-5">
+        <div class="container">
+            <h4>CHINESE NEW YEAR SALE</h4>
+            <h1>Mont Marte Collection<br>UP TO 20% OFF</h1>
+            <button class="text-uppercase shop">Shop Now</button>
+        </div>
+    </section>
+
+
+    <section id="watches" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Best Watches</h3>
+            <hr class="mx-auto">
+            <p>Here you can check out our new products with fair price on rymo.</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/watches/1.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/watches/2.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/watches/3.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/watches/1.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="shoes" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Running Shoes</h3>
+            <hr class="mx-auto">
+            <p>Here you can check out our new products with fair price on rymo.</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shoes/8.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shoes/7.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shoes/6.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shoes/5.jpg" alt="">
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="new" class="w-100">
+      <div class="row p-0 m-0">
+          <div class="one col-lg-4 col-md-12 col-12 p-0">
+            <div class="img-area">
+              <img class="img-fluid" src="promotionProduct/paintbrushes.jpg" alt="">
+              <div class="img-text">
+                  <h2>Smooth paintbrushes</h2>
+                  <button class="text-uppercase shop">Shop now</button>
+              </div>
+            </div>
+          </div>
+          <div class="one col-lg-4 col-md-12 col-12 p-0">
+            <div class="img-area">
+              <img class="img-fluid" src="promotionProduct/sketchbook.jpg" alt="">
+              <div class="img-text">
+                  <h2>Awesome sketchbooks</h2>
+                  <button class="text-uppercase shop">Shop now</button>
+                </div>
+            </div>
+          </div>
+          <div class="one col-lg-4 col-md-12 col-12 p-0">
+            <div class="img-area">
+              <img class="img-fluid" src="promotionProduct/paint.jpg" alt="">
+              <div class="img-text">
+                  <h2>Paint Up To 30% Off</h2>
+                  <button class="text-uppercase shop">Shop now</button>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- footer -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="logoImage/whiteLogo.png" alt="logo image" width="180" height="40">
+                <p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna fringilla diam maecenas ultricies mi eget mauris.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3 menu">
+                <h5 class="pb-2">Menu</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+              <h5 class="pb-2">Contact Us</h5>
+              <div>
+                  <h6 class="text-uppercase">Address</h6>
+                  <p>535 Clementi Rd, Singapore 599489</p>
+              </div>
+              <div>
+                  <h6 class="text-uppercase">Phone</h6>
+                  <p>+65 6466 6555</p>
+              </div>
+              <div>
+                  <h6 class="text-uppercase">Email</h6>
+                  <p>artisle@gmail.com</p>
+              </div>
+          </div>
+
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+              <h5 class="pb-2">Newsletter</h5>
+              <p>Follow us on our social media for latest update.</p>
+              <div class="footer-newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button> SEND </button>
+              </div>
+          </div>
+      </div>
+
+      <div class="copyright mt-5">
+          <div class="row container mx-auto">
+
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <img src="img/payment.png" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                  <p class="rights">ARTISLE © 2023. All Rights Reserved.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+    <script src="./javascript/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+
+</html>
