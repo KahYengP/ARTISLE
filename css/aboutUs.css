@@ -140,6 +140,39 @@ section h4{
     margin-bottom:10px;
 }
 
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    background: #c7e2ff;
+    gap: 1.5rem;
+  }
+  .about-img {
+    flex: 1 1 17rem;
+  }
+  .about-text {
+    flex: 1 1 17rem;
+  }
+  .about-text h2 {
+    font-size: 1.2rem;
+    color: var(--second-color);
+  }
+  .about-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+  }
+
+  .btn {
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+  }
+  .btn:hover {
+    color: #fb774b;
+    background: var(--second-color);
+  }
+
 
 
 
