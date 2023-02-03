@@ -75,117 +75,208 @@
             </div>
         </nav>
     </div>
+    <!--end of navigation bar-->
 
-    <section class="vh-100" style="background-color: #f4f5f7;">
-        <div class="container py-5 h-100">
-          <div class="row justify-content-center align-items-center h-100">
-            <div class="col col-lg-6 mb-4 mb-lg-0">
-              <div class="card mb-3" style="border-radius: .5rem;">
-                <div class="row g-0">
-                  <div class="col-md-4 gradient-custom text-center text-white"
-                    style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                      alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
-                    <h5 id="name">Marie Horwitz</h5>
-                    <i class="far fa-edit mb-5"></i>
+   <!--start of profile-->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url('banner.jpg'); background-size: cover; background-position: center top;">
+        <!-- Mask -->
+        <span class="mask bg-gradient-default opacity-8"></span>
+        <!-- Header container -->
+
+        <div class="container-fluid d-flex align-items-center">
+          <div class="row">
+            <div class="col-lg-7 col-md-10">
+              <h1 class="display-2 text-white">Hello Winter</h1>
+              <p class="text-white mt-0 mb-5">This is your profile page. You can update your personal particulars conveniently.</p>
+              <a href="#!" class="btn btn-info">Edit profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content -->
+      <div class="container-fluid mt--7">
+        <div class="row">
+          <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+            <div class="card card-profile shadow">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 order-lg-2">
+                  <div class="card-profile-image">
+                    <a href="#">
+                      <img src="profileImage/winter.jpg" class="rounded-circle">
+                    </a>
                   </div>
-                  <div class="col-md-8">
-                    <div class="card-body p-4">
-                      <h6>Information</h6>
-                      <hr class="mt-0 mb-4">
-                      <div class="row pt-1">
-                        <div class="col-6 mb-3">
-                          <h6>Email</h6>
-                          <p class="text-muted" id="email">info@example.com</p>
-                        </div>
-                      </div>
-                      <h6>Projects</h6>
-                      <hr class="mt-0 mb-4">
-                      <div class="row pt-1">
-                        <div class="col-6 mb-3">
-                          <h6>Recent</h6>
-                          <p class="text-muted">Lorem ipsum</p>
-                        </div>
-                        <div class="col-6 mb-3">
-                          <h6>Most Viewed</h6>
-                          <p class="text-muted">Dolor sit amet</p>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-start">
-                        <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
-                        <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
-                        <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-                      </div>
+                </div>
+              </div>
+              <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                <div class="d-flex justify-content-between">
+                </div>
+              </div>
+              <div class="card-body pt-0 pt-md-4">
+                <div class="row">
+                  <div class="col">
+                    <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                      
                     </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3>
+                    Winter <span class="font-weight-light">, 22</span>
+                  </h3>
+                  <div class="h5 font-weight-300">
+                    <i class="ni location_pin mr-2"></i>Singapore
+                  </div>
+                  <div class="h5 mt-4">
+                    <a href="#!" class="btn btn-info1">Log Out</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-xl-8 order-xl-1">
+            <div class="card bg-secondary shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-8">
+                    <h3 class="mb-0">My account</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <form>
+                  <h6 class="heading-small text-muted mb-4">User information</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-phonenumber">Phone Number</label>
+                          <input type="text" id="input-phonenumber" class="form-control form-control-alternative" placeholder="phonenumber" value="+65 91234 9876">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input-email">Email address</label>
+                          <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="winter@example.com">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-first-name">First name</label>
+                          <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Winter">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-last-name">Last name</label>
+                          <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Kim">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                  <!-- Address -->
+                  <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-address">Address</label>
+                          <input id="input-address" class="form-control form-control-alternative" placeholder="Home Address" value="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-city">City</label>
+                          <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="Singapore">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-country">Country</label>
+                          <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="Singapore">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input-country">Postal code</label>
+                          <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-
-     <!-- footer -->
-     <footer class="mt-5 py-5">
-        <div class="row container mx-auto pt-5">
+        <!-- footer -->
+        <footer class="mt-5 py-5">
+          <div class="row container mx-auto pt-5">
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                  <img src="logoImage/whiteLogo.png" alt="logo image" width="180" height="40">
+                  <p class="pt-3">ARTISLE is a one-stop online art supply store, offering a wide selection of materials for artists of all levels. With a focus on quality products, affordability, and customer satisfaction, ARTISLE makes it easy to bring your creativity to life.</p>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12 mb-3 menu">
+                  <h5 class="pb-2">Menu</h5>
+                  <ul class="text-uppercase list-unstyled">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="shop.html">Shop</a></li>
+                      <li><a href="category.html">Category</a></li>
+                      <li><a href="aboutUs.html">About</a></li>
+                  </ul>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>535 Clementi Rd, Singapore 599489</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>+65 6466 6555</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>artisle@gmail.com</p>
+                </div>
+            </div>
+  
             <div class="footer-one col-lg-3 col-md-6 col-12">
-                <img src="logoImage/whiteLogo.png" alt="logo image" width="180" height="40">
-                <p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna fringilla diam maecenas ultricies mi eget mauris.</p>
+                <h5 class="pb-2">Newsletter</h5>
+                <p>Follow us on our social media for latest update.</p>
+                <div class="footer-newsletter">
+                  <input type="email" placeholder="Enter your email">
+                  <button> SEND </button>
+                </div>
             </div>
-            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3 menu">
-                <h5 class="pb-2">Menu</h5>
-                <ul class="text-uppercase list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="category.html">Category</a></li>
-                    <li><a href="aboutUs.html">About</a></li>
-                </ul>
+        </div>
+  
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+  
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="img/payment.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p class="rights">ARTISLE © 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
-              <h5 class="pb-2">Contact Us</h5>
-              <div>
-                  <h6 class="text-uppercase">Address</h6>
-                  <p>535 Clementi Rd, Singapore 599489</p>
-              </div>
-              <div>
-                  <h6 class="text-uppercase">Phone</h6>
-                  <p>+65 6466 6555</p>
-              </div>
-              <div>
-                  <h6 class="text-uppercase">Email</h6>
-                  <p>artisle@gmail.com</p>
-              </div>
-          </div>
-
-          <div class="footer-one col-lg-3 col-md-6 col-12">
-              <h5 class="pb-2">Newsletter</h5>
-              <p>Follow us on our social media for latest update.</p>
-              <div class="footer-newsletter">
-                <input type="email" placeholder="Enter your email">
-                <button> SEND </button>
-              </div>
-          </div>
-      </div>
-
-      <div class="copyright mt-5">
-          <div class="row container mx-auto">
-
-              <div class="col-lg-3 col-md-6 col-12 mb-4">
-                  <img src="img/payment.png" alt="">
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
-                  <p class="rights">ARTISLE © 2023. All Rights Reserved.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-          </div>
-      </div>
-  </footer>
-
+        </div>
+    </footer>
 
     <script src="./javascript/utils.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
