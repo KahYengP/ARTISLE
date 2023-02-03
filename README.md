@@ -4,8 +4,8 @@ Founded by Sharon Phang and Charmaine Cheng in 2023, ARTISLE is passionate and d
 
 #### Notes
 
-***ARTISLE is a mock business idea and is *NOT* a licensed business and art distributor
-Please note that due to the large asset file size, the website takes longer to load***
+**ARTISLE is a mock business idea and is **NOT** a licensed business and art distributor
+Please note that due to the large asset file size, the website takes longer to load**
 
 ## Website Pages & Features
 
