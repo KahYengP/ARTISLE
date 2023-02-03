@@ -1,6 +1,6 @@
 # ARTISLE
 
-Founded by Sharon Phang and Charmaine Cheng in 2023, ARTISLE is passionately dedicated to promote art appreciation and to warmly welcome one to join the art community.
+Founded by Sharon Phang and Charmaine Cheng in 2023, ARTISLE is passionate and dedicated ecommerce store specializing in selling top-quality art supplies and materials to artists and creative individuals everywhere. From paint brushes to canvas, we have everything an artist needs to bring their vision to life. With a commitment to customer satisfaction and a user-friendly website, we aim to make the art supplies shopping experience seamless and enjoyable for everyone. Whether you're a professional artist, student, or hobbyist, our diverse range of products will cater to your unique needs and help you express your creativity with ease.
 
 #### Notes
 
@@ -179,6 +179,8 @@ Please note that due to the large asset file size, the website takes longer to l
 
 - Fixed bugs on shop page
 - Successfully linked API to shop page
+- Begun working on profile page
+- Completed profile page
 
 15.
 
