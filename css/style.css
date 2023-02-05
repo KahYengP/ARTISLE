@@ -416,6 +416,7 @@ hr {
   object-fit: contain;
   object-position: center;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 svg {

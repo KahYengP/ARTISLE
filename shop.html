@@ -9,10 +9,12 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="/logoImage/logo-Icon.png"> 
+
 </head>
 
 <body>
@@ -33,7 +35,7 @@
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
+                            <a class="nav-link active" href="shop.html">Shop</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -75,15 +77,9 @@
             </div>
         </nav>
     </div>
-
-    <section id="newproducts" class="my-5 pb-5">
-        <div class="container text-center mt-5 py-5">
-            <h3>New Products</h3>
-            <hr class="mx-auto">
-            <p>Here you can check out our new products at an affordable price on ARTISLE.</p>
-        </div>
-        <div class="row mx-auto container-fluid">
-            <div class="product text-center col-lg-3 col-md-4 col-12">
+        <section class="spacing">
+        <div id="item-list" class="row mx-auto container-fluid">
+            <!-- <div class="product text-center col-lg-3 col-md-4 col-12">
                 <img class="img-fluid mb-3" src="products/brushes1-deli.jpg" alt="">
                 <h5 class="p-name">Deli Gouache Brush Set of 4s</h5>
                 <h4 class="p-price">$5.50</h4>
@@ -107,109 +103,74 @@
                 <h5 class="p-name">Mont Marte Oval Plastic Palette</h5>
                 <h4 class="p-price">$5.00</h4>
                 <button class="buy-btn">Buy Now</button>
-            </div>
+            </div> -->
         </div>
-    </section>
-
-    <section id="newproducts1" class="my-5">
-        <div class="row mx-auto container-fluid">
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="products/oil1-w&n-linseed.jpg" alt="">
-                <h5 class="p-name">Winsor & Newton Refined Linseed Oil 75ml</h5>
-                <h4 class="p-price">$6.50</h4>
-                <button class="buy-btn">Buy Now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="products/pencil1-fc-watercolour.jpg" alt="">
-                
-                <h5 class="p-name">Faber Castell Watercolor Pencils Box 24 Colours</h5>
-                <h4 class="p-price">$12.00</h4>
-                <button class="buy-btn">Buy Now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="products/paint3-mm-acrylic.jpg" alt="">
-                <h5 class="p-name">Mont Marte Premium Pouring Acrylic Paint 240ml</h5>
-                <h4 class="p-price">$10.00</h4>
-                <button class="buy-btn">Buy Now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="products/paper2-fc-drawing.jpg" alt="">
-                <h5 class="p-name">FaberCastell A4 Size Drawing Block 20 Sheets</h5>
-                <h4 class="p-price">$2.00</h4>
-                <button class="buy-btn">Buy Now</button>
-            </div>
-        </div>
+        </section>
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-     <!-- footer -->
-     <footer class="mt-5 py-5">
-        <div class="row container mx-auto pt-5">
-            <div class="footer-one col-lg-3 col-md-6 col-12">
-                <img src="logoImage/whiteLogo.png" alt="logo image" width="180" height="40">
-                <p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna fringilla diam maecenas ultricies mi eget mauris.</p>
+    <!-- Newsletter Section Start -->
+    <section class="newsletter">
+        <div class="newsletter-content container">
+            <div class="newsletter-text">
+                <h2>SIGN UP AND WIN!</h2>
+                <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
             </div>
-            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3 menu">
-                <h5 class="pb-2">Menu</h5>
-                <ul class="text-uppercase list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="category.html">Category</a></li>
-                    <li><a href="aboutUs.html">About</a></li>
-                </ul>
-            </div>
-            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
-              <h5 class="pb-2">Contact Us</h5>
-              <div>
-                  <h6 class="text-uppercase">Address</h6>
-                  <p>535 Clementi Rd, Singapore 599489</p>
-              </div>
-              <div>
-                  <h6 class="text-uppercase">Phone</h6>
-                  <p>+65 6466 6555</p>
-              </div>
-              <div>
-                  <h6 class="text-uppercase">Email</h6>
-                  <p>artisle@gmail.com</p>
-              </div>
-          </div>
+            <!-- Form -->
+            <form action="">
+                <input type="email" name="" id="" placeholder="Enter your email..." required>
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+    
+        </section>
+    <!-- Newsletter Section End -->
+    
+    <!-- Footer Start -->
+    <section class="footer container">
+        <div class="footer-box">
+            <h3>The Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-box">
+            <h3>Popular Categories</h3>
+            <a href="#">Paint</a>
+            <a href="#">Brushes</a>
+            <a href="#">Paper</a>
+            <a href="#">Palette</a>
+        </div>
+        <div class="footer-box">
+            <h3>More Information</h3>
+            <a href="#">Shipping</a>
+            <a href="#">Delivery & Returns</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Sitemap</a>
+        </div>
+        <div class="footer-box">
+            <h3>Social</h3>
+           <div class="social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+           </div>
+           
+        </div>
+        
+    </section>
+    <!-- Footer End -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; ARTISLE All Right Reserved</p>
+    </div>
+    
+    <script src="javascript/shop.js"></script>
+    <script src="javascript/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
-          <div class="footer-one col-lg-3 col-md-6 col-12">
-              <h5 class="pb-2">Newsletter</h5>
-              <p>Follow us on our social media for latest update.</p>
-              <div class="footer-newsletter">
-                <input type="email" placeholder="Enter your email">
-                <button> SEND </button>
-              </div>
-          </div>
-      </div>
-
-      <div class="copyright mt-5">
-          <div class="row container mx-auto">
-
-              <div class="col-lg-3 col-md-6 col-12 mb-4">
-                  <img src="img/payment.png" alt="">
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
-                  <p class="rights">ARTISLE © 2023. All Rights Reserved.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-          </div>
-      </div>
-  </footer>
+</body>
+</html>
 

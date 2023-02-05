@@ -1,6 +1,5 @@
-//this is the api key, u can find in your airtable help button they will show where is the api 
 const AIRTABLE_API_KEY = "patRgUH9Rcn6kS52E.bbed58defa5c76d075bc6052ebb1dc7389fff8f290360716d868ae1fd1c53d4b";
-//similar to ajax but i use axios
+
 const client = axios.create({
   baseURL: 'https://api.airtable.com/v0/appgzJKZmNGJoa4IH',
   headers: {
@@ -17,7 +16,7 @@ const container = document.querySelector(".container");
 const sign_in_form = document.querySelector("#sign-in-form");
 const sign_up_form = document.querySelector("#sign-up-form");
 
-//make the function work when u click 
+//make the function work when clicking on it  
 sign_up_btn.addEventListener("click", () => {
   container.classList.add("sign-up-mode");
 });
