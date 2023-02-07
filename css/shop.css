@@ -6,3 +6,8 @@ body{
     margin-top: 10rem;
 }
 
+.text-center {
+    text-align: center!important;
+    padding-bottom: 80px;
+}
+
