@@ -247,90 +247,79 @@
           <div class="cart-item-box">
   
             <h2 class="section-heading">Order Summary</h2>
-  
-            <div class="product-card">
-  
-              <div class="card">
-  
-                <div class="img-box">
-                  <img src="products/brushes2.1-deli.jpg" alt="Green tomatoes" width="80px" class="product-img">
-                </div>
-  
-                <div class="detail">
-  
-                  <h4 class="product-name">Green Tomatoes 1 Kilo</h4>
-  
-                  <div class="wrapper">
-  
-                    <div class="product-qty">
-                      <button id="decrement">
-                        <ion-icon name="remove-outline"></ion-icon>
-                      </button>
-  
-                      <span id="quantity">1</span>
-  
-                      <button id="increment">
-                        <ion-icon name="add-outline"></ion-icon>
-                      </button>
-                    </div>
-  
-                    <div class="price">
-                      $ <span id="price">1.25</span>
-                    </div>
-  
+
+            <div id="summary-products">
+              <div class="product-card">
+                <div class="card">
+                  <div class="img-box">
+                    <img src="products/brushes2.1-deli.jpg" alt="Green tomatoes" width="80px" class="product-img">
                   </div>
-  
+                  <div class="detail">
+                    <h4 class="product-name">Green Tomatoes 1 Kilo</h4>
+                    <div class="wrapper">
+                      <div class="product-qty">
+                        <button id="decrement">
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+                        <span id="quantity">1</span>
+                        <button id="increment">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="price">
+                        $<span id="price">1.25</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="product-close-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
                 </div>
-  
-                <button class="product-close-btn">
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-  
+    
               </div>
-  
+              <div class="product-card">
+    
+                <div class="card">
+    
+                  <div class="img-box">
+                    <img src="products/paint1-w&n-watercolour.jpg" alt="Cabbage" width="80px" class="product-img">
+                  </div>
+    
+                  <div class="detail">
+    
+                    <h4 class="product-name">Cabbage 1 Pcs</h4>
+    
+                    <div class="wrapper">
+    
+                      <div class="product-qty">
+                        <button id="decrement">
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+    
+                        <span id="quantity">1</span>
+    
+                        <button id="increment">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+    
+                      <div class="price">
+                        $ <span id="price">0.80</span>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                  <button class="product-close-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+    
+                </div>
+    
+              </div>
             </div>
   
-            <div class="product-card">
-  
-              <div class="card">
-  
-                <div class="img-box">
-                  <img src="products/paint1-w&n-watercolour.jpg" alt="Cabbage" width="80px" class="product-img">
-                </div>
-  
-                <div class="detail">
-  
-                  <h4 class="product-name">Cabbage 1 Pcs</h4>
-  
-                  <div class="wrapper">
-  
-                    <div class="product-qty">
-                      <button id="decrement">
-                        <ion-icon name="remove-outline"></ion-icon>
-                      </button>
-  
-                      <span id="quantity">1</span>
-  
-                      <button id="increment">
-                        <ion-icon name="add-outline"></ion-icon>
-                      </button>
-                    </div>
-  
-                    <div class="price">
-                      $ <span id="price">0.80</span>
-                    </div>
-  
-                  </div>
-  
-                </div>
-  
-                <button class="product-close-btn">
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-  
-              </div>
-  
-            </div>
   
           </div>
   
@@ -355,6 +344,7 @@
               <div class="total">
                 <span>Total</span> <span>$ <span id="total">2.15</span></span>
               </div>
+              <div id="checkout-btn" class="btn btn-primary mt-2">Pay<span id="total-in-button"></span>
   
             </div>
   
@@ -438,7 +428,11 @@
 
 
 
-
+          <!-- Required JS Packages -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.3.2/dist/axios.min.js"></script>
 
 
 

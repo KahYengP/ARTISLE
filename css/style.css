@@ -419,21 +419,18 @@ svg {
 }
 
 
-.buy-btn{
+.add-btn{
   color: black;
-  border-color: black;
+  border: none;
   background-color: pink;
   border-radius: 0.5rem;
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
   
 }
 
-.buy-btn:hover{
+.add-btn:hover{
   background-color: #023a15;
   color: rgb(254, 254, 254);
 }
