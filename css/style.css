@@ -106,7 +106,7 @@ hr {
 .navbar i:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar i.active {
-    color: #023a15;
+    color: #1e723a;
 }
 
 .navbar i {
@@ -132,7 +132,7 @@ hr {
 }
 
 .dropdown-item:hover {
-    color: #40b166;
+    color: #1e723a;
     text-decoration: none;
     background-color: #f8f9fa;
 }
