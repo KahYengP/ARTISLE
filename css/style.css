@@ -180,6 +180,10 @@ hr {
     transition: 0.3s ease;
     color: black;
 }
+
+.me-2 {
+  margin-right: 0.5rem;
+}
 /* 
 .abtn{
   position: relative;
