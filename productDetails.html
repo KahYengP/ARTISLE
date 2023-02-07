@@ -26,63 +26,63 @@
     
     <body>
       <!--start of navigation bar-->
+      <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt' ></i></a>
+      <!-- NAVIGATION -->
       <div class="navbar1">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
-            <div class="container">
-                <img src="logoImage/logo-Icon.png" alt="logo icon" width="40" height="49" style="padding-bottom: 6px;">
-                <a href="index.html"></a><img src="logoImage/logo.png" alt="logo image" width="175" height="60" style="padding-top:15px;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i id="bar" class="fas fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Category
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Paint</a>
-                                <a class="dropdown-item" href="#"> Brushes</a>
-                                <a class="dropdown-item" href="#"> Pencil</a>
-                                <a class="dropdown-item" href="#"> Palette</a>
-                                <a class="dropdown-item" href="#"> Paper</a>
-                                <a class="dropdown-item" href="#"> Oil</a>
-                            
-                            </div>
-                        </li>
-                
-                        <li class="nav-item">
-                            <a class="nav-link active" href="aboutUs.html">About</a>
-                        </li>
-
-                        <li class="nav-item search">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <i class="fal fa-search"></i>
-                                </form>
-                        </li>
-                        <li class="nav-item search">
-                            <i onclick="window.location.href='cart.html';" class="fal fa-shopping-bag"></i>
-                        </li>
-
-                        <li class="nav-item profile">
-                          <i onclick="window.location.href='login.html';" class="fal fa-user"></i>
-                      </li>
-
-
-
-                </div>
-            </div>
-        </nav>
-    </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+              <div class="container logo">
+                  <img src="logoImage/logo-Icon.png" alt="logo icon" width="40" height="49" style="padding-bottom: 6px;">
+                  <a href="index.html"><img src="logoImage/logo.png" alt="logo image" width="175" height="60" style="padding-top:15px;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i id="bar" class="fas fa-bars"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+  
+                          <li class="nav-item">
+                              <a class="nav-link active" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="shop.html">Shop</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                  aria-haspopup="true" aria-expanded="false">
+                                  Category
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Paint</a>
+                                  <a class="dropdown-item" href="#"> Brushes</a>
+                                  <a class="dropdown-item" href="#"> Pencil</a>
+                                  <a class="dropdown-item" href="#"> Palette</a>
+                                  <a class="dropdown-item" href="#"> Paper</a>
+                                  <a class="dropdown-item" href="#"> Oil</a>
+                              
+                              </div>
+                          </li>
+                  
+                          <li class="nav-item">
+                              <a class="nav-link" href="aboutUs.html">About</a>
+                          </li>
+  
+                          <li class="nav-item search">
+                              <form class="d-flex" role="search">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  <i class="fal fa-search"></i>
+                                  </form>
+                          </li>
+                          <li class="nav-item search">
+                              <i onclick="window.location.href='cart.html';" class="fal fa-shopping-bag"></i>
+                          </li>
+  
+                          <li class="nav-item profile">
+                            <i onclick="handleProfileClick()" class="fal fa-user"></i>
+                          </li>
+  
+                  </div>
+              </div>
+          </nav>
+      </div>
     <!--end of navigation bar-->
     <!--start of code-->
     <section class="container sproduct my-5 pt-5">
@@ -110,13 +110,6 @@
                 <h6>Home / T-Shirt</h6>
                 <h3 class="py-4">Men's Fashion T Shirt</h3>
                 <h2>$139.00</h2>
-                <select class="my-3">
-                  <option>Select Size</option>
-                  <option>XL</option>
-                  <option>XXL</option>
-                  <option>Small</option>
-                  <option>Large</option>
-                </select>
                 <input type="number" value="1">
                 <button class="buy-btn">Add To Cart</button>
                 <h4 class="mt-5 mb-4">Product Details</h4>

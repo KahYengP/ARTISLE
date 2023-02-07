@@ -222,28 +222,6 @@ hr {
 
 } */
 
-.bttn{
-  background: none;
-  color: #ebdbc8;
-  border: 2px solid #ebdbc8;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  padding: 12px 20px;
-  min-width: 200px;
-  margin:10px;
-  cursor: pointer;
-  transition: color 0.4s linear;
-  position: relative;
-  
-}
-
-.bttn:hover{
-  color: #1e3932;
-  background-color: #ebdbc8;
-  border: 2px solid #ebdbc8;
-  /* background-color: white; */
-}
-
 .button_slide { 
   color: white; 
   border: 2px solid white; 
@@ -269,39 +247,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-.bttn::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: -1;
-  transition: transform 0.5s;
-  transform-origin: 0 0;
-  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0,7);
-}
-
-.text-uppercaseshop::before{
-  transform: scaleY(0);
-}
-
-
-.text-uppercaseshop:hover::before{
-  transform: scaleY(1);
-}
-
-
 .bttnP{
   background: none;
   color: #063616;
@@ -318,9 +263,9 @@ hr {
 }
 
 .bttnP:hover{
-  color: #1e3932;
+  color: #023a15;
   background-color:  #ebdbc8;
-  border-color:  #1e3932;
+  border-color:  #023a15;
   /* background-color: white; */
 }
 
@@ -471,19 +416,21 @@ svg {
 
 
 .buy-btn{
-  color:  #8b4c3e;
-  border-color: #8b4c3e;
-  background-color: white;
-  border-radius: 50px;
+  color: black;
+  border-color: black;
+  background-color: pink;
+  border-radius: 0.5rem;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 14pt;
+  font-size: 1rem;
+  cursor: pointer;
+  
 }
 
 .buy-btn:hover{
-  background-color: #9f5d4e;
+  background-color: #023a15;
   color: rgb(254, 254, 254);
 }
 

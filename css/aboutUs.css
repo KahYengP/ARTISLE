@@ -202,6 +202,9 @@ text-align: center;
     font-family: "Poppins", sans-serif;
 }
 
+.container.logo{
+  gap: 0rem;
+}
 /*Responsive*/
 @media(max-width:1385px){
     section{
