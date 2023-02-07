@@ -22,6 +22,8 @@
 <body>
 
     <!-- NAVIGATION -->
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt' ></i></a>
+    <!-- NAVIGATION -->
     <div class="navbar1">
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
             <div class="container">
@@ -34,7 +36,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="shop.html">Shop</a>
@@ -70,10 +72,8 @@
                         </li>
 
                         <li class="nav-item profile">
-                          <i onclick="window.location.href='login.html';" class="fal fa-user"></i>
-                      </li>
-
-
+                          <i onclick="handleProfileClick()" class="fal fa-user"></i>
+                        </li>
 
                 </div>
             </div>
@@ -245,7 +245,7 @@
   
           <div class="cart-item-box">
   
-            <h2 class="section-heading">Order Summery</h2>
+            <h2 class="section-heading">Order Summary</h2>
   
             <div class="product-card">
   

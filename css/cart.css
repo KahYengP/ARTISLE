@@ -1,4 +1,7 @@
+body {
+  font-family: 'Poppins', sans-serif;
 
+}
 :root {
 
     /**
@@ -266,6 +269,13 @@ main{
     padding-top: 10px;
 }
 
+.form-control {
+  border-radius: 1rem;
+}
+
+.me-2 {
+  margin-right: 0rem!important;
+}
 
 @media (max-width: 1200px) {
 
@@ -344,3 +354,18 @@ main{
     .expire-date .input-flex { flex-direction: row; }
   
   }
+
+  @media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+}
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+}
