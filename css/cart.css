@@ -183,12 +183,15 @@ main{
   }
   
   .product-qty button {
-    background: var(--platinum);
+    background-color: var(--main-color);
+    color: white;
     width:  20px;
     height: 20px;
-    display:         flex;
+    display: flex;
     justify-content: center;
-    align-items:     center;
+    align-items: center;
+    border: none;
+
   }
   
   .product-qty button:active,
@@ -203,6 +206,9 @@ main{
     position: absolute;
     top:   0;
     right: 0;
+    border: none;
+    height: 25px;
+
   }
   
   .product-close-btn ion-icon {
@@ -275,6 +281,17 @@ main{
 
 .me-2 {
   margin-right: 0rem!important;
+}
+
+.row{
+  margin-top: 0;
+}
+
+.newsletter-content form .btn {
+  text-transform: uppercase;
+  color: var(--bg-color);
+  cursor: pointer;
+  background: var(--main-color);
 }
 
 @media (max-width: 1200px) {
