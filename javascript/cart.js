@@ -1,6 +1,13 @@
 $(document).ready(function () {
     //loading screen
-  $("#summary-products").html("loading...");
+  $("#summary-products").html(`
+  <div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_XgfqoVFulv.json"  background="transparent"  speed="1" style="width: 600px; height: 600px; margin-left: 440px" loop autoplay></lottie-player>
+  </div>
+</div>
+`);
 
   //get item from local storage
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -14,7 +21,7 @@ $(document).ready(function () {
         <div class="product-card">
           <div class="card">
             <div class="img-box">
-              <img src="${item.thumbnail}" alt="Green tomatoes" width="80px" class="product-img">
+              <img src="${item.thumbnail}" alt="image" width="80px" class="product-img">
             </div>
             <div class="detail">
               <h4 class="product-name">${item.name}</h4>

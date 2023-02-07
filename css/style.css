@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 /* Variables */
 :root {
@@ -13,6 +14,37 @@
     --bg-color: #fff;
   }
 
+
+@font-face{
+   font-family: Genty;
+   src: url("/font/Genty.ttf") format("OpenType");
+}
+
+@font-face{
+  font-family: conthrax;
+  src: url("/font/conthrax.otf") format("OpenType");
+}
+
+.text-white.mt-0.mb-5 {
+  padding-bottom: 40px;
+}
+
+.fontG{
+  font-family: Genty;
+ 
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+
+}
+
+.fontC-H{
+  font-family: conthrax;
+  font-size: 20px;
+}
+
+.fontG-BP{
+  font-size: 75px;
+}
   /* Custom Scroll Bar */
 html::-webkit-scrollbar {
     width: 0.5rem;
@@ -63,6 +95,7 @@ h6 {
 
 .WColor{
     color: #ffffff;
+    font-size: 1.1rem;
     
 }
 
@@ -83,7 +116,7 @@ h6 {
 hr {
     width: 30px;
     height: 2px;
-    background-color: #023a15    ;
+    background-color: #023a15;
 }
 
 .navbar {
@@ -143,7 +176,7 @@ hr {
 }
 
 .container.sale{
-    padding-bottom: 80px;
+    padding-bottom: 0px;
 }
 .home-content {
     min-height: 640px;
@@ -180,6 +213,8 @@ hr {
     transition: 0.3s ease;
     color: black;
 }
+
+
 
 .me-2 {
   margin-right: 0.5rem;
@@ -226,104 +261,56 @@ hr {
 
 } */
 
+.heading.fontC-P{
+  font-family: conthrax; 
+  font-size: 28px;
+  color: rgb(14, 13, 13);
+}
+
+
 .button_slide { 
-  color: white; 
-  border: 2px solid white; 
+  color: black; 
+  border: 2px solid black; 
   border-radius: 0px; 
-  padding: 18px 36px; 
+  padding: 16px 40px; 
   display: inline-block; 
   font-family: "Lucida Console", Monaco, monospace; 
-  font-size: 14px; 
+  font-size: 18px; 
   letter-spacing: 1px; 
   cursor: pointer; 
-  box-shadow: inset 0 0 0 0 white; 
+  box-shadow: inset 0 0 0 0 pink; 
   -webkit-transition: ease-out 0.4s; 
   -moz-transition: ease-out 0.4s; 
   transition: ease-out 0.4s; 
+  background-color: whitesmoke;
 }
 
 
 .slide_down:hover { 
-  box-shadow: inset 0 100px 0 0 white; 
+  box-shadow: inset 0 100px 0 0 pink; 
   color:black; 
 }
 
-
-
-
-.bttnP{
-  background: none;
-  color: #063616;
-  border: 2px solid #063616;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  padding: 12px 20px;
-  min-width: 200px;
-  margin:10px;
-  cursor: pointer;
-  transition: color 0.4s linear;
-  position: relative;
-  
+.button_slide2 { 
+  color: black; 
+  border: 2px solid black; 
+  border-radius: 0px; 
+  padding: 16px 40px; 
+  display: inline-block; 
+  font-family: "Lucida Console", Monaco, monospace; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  cursor: pointer; 
+  box-shadow: inset 0 0 0 0 rgb(19, 108, 48); 
+  -webkit-transition: ease-out 0.4s; 
+  -moz-transition: ease-out 0.4s; 
+  transition: ease-out 0.4s; 
+  background-color: #f29b99;
 }
 
-.bttnP:hover{
-  color: #023a15;
-  background-color:  #ebdbc8;
-  border-color:  #023a15;
-  /* background-color: white; */
-}
-
-.bttnP::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: -1;
-  transition: transform 0.5s;
-  transform-origin: 0 0;
-  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0,7);
-}
-
-.text-uppercaseshopPink::before{
-  transform: scaleY(0);
-}
-
-
-.text-uppercaseshopPink:hover::before{
-  transform: scaleY(1);
-}
-
-.heading {
-  position: relative;
-  display: inline-flex;
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  font-family: var(--poppins-font);
-}
-.heading::after {
-  content: "";
-  position: absolute;
-  right: -12px;
-  width: 40px;
-  height: 40px;
-  bottom: 0;
-  background: rgb(255, 219, 225);
-  z-index: -1;
-  clip-path: polygon(
-    50% 0%,
-    83% 12%,
-    100% 43%,
-    94% 78%,
-    68% 100%,
-    32% 100%,
-    6% 78%,
-    0% 43%,
-    17% 12%
-  );
+.slide_down2:hover { 
+  box-shadow: inset 0 100px 0 0 rgb(19, 108, 48); 
+  color:white; 
 }
 
 
@@ -442,10 +429,26 @@ svg {
 
 #bar:hover,
 #bar.active {
-    color: #fff;
+    color: green;
+}
+
+.fontG-DC{
+    color: whitesmoke; 
+    font-size: 50px; 
+    -webkit-text-stroke-color: black; 
+    
 }
 
 
+.imageZ{
+  transition: transform .2s;
+}
+
+.imageZ:hover{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 
 
@@ -459,7 +462,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #023a15;
+    background-color: #075a23;
 }
 
 #home span {
@@ -592,7 +595,7 @@ svg {
 
   @media only screen and (min-width: 1230px) {
     #video{margin-top: 100px;}
-  
+    
   }
 
   @media screen and (max-width: 992px) {
@@ -629,6 +632,7 @@ svg {
   #navbarSupportedContent>ul>li:nth-child(n)>a {
       padding: 10px 0;
   }
+  
   }
 
   @media only screen and (min-width: 960px) {
@@ -644,6 +648,7 @@ svg {
       border-top: 0;
     }
     #video{margin-top: 100px}
+
   }
 
 

@@ -110,12 +110,20 @@ iframe{
   /* margin-top: 2rem; */
 }
 
+.container-text{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  /* margin-top: 2rem; */
+}
 .heading span {
   font-size: 1rem;
   font-weight: 600;
   color: var(--second-color);
 }
-
+img {
+  border-radius: 1.5rem;
+}
 .delivery-img,
 .app-img, .about-img {
   flex: 1 1 21rem;
@@ -146,7 +154,7 @@ color: var(--second-color);
 
 .heading1 h1 {
 font-size: 2rem;
-color: var(--main-color);
+color: #023a15;
 text-align: center;
 
 }
@@ -154,7 +162,7 @@ text-align: center;
 .about {
     display: flex;
     flex-wrap: wrap;
-    background: #ebdbc8;
+    background: rgb(249, 209, 216);
     gap: 1.5rem;
   }
 
@@ -207,6 +215,24 @@ text-align: center;
   gap: 0rem;
 }
 
+.btn2 {
+
+  background: #023a15;
+  padding: 15px 24px;
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+
+
+}
+.btn2:hover {
+  background: #f29b99;
+  color:black;
+  transition: 0.3s all linear;
+  text-decoration: none;
+}
+
 /*Responsive*/
 @media(max-width:1385px){
     section{
@@ -232,6 +258,21 @@ text-align: center;
     }
 }
 
+@media (max-width: 1150px) {
+  header {
+    padding: 18px 7%;
+  }
+  section {
+    padding: 50px 7%;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
 @media(max-width: 1040px){
     .about-us{ 
         grid-template-columns: 1fr;
@@ -240,16 +281,55 @@ text-align: center;
     }
     .location{
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
     }
     .main-img img{
         padding-top:40px;
     }
     
 }
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
 
+@media (max-width: 768px) {
+  .home-text {
+    padding-top: inherit;
+  }
+  .shop-container .box {
+    margin-top: 6rem;
+  }
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+  .heading span {
+    font-size: 0.9rem;
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
 
+  .container.logo{
+    display: flex;
+    flex-direction: row;
+  }
+  .about-img {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
 
 
 

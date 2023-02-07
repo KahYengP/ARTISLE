@@ -7,13 +7,24 @@ const axiosInstance = axios.create({
   }
 });
 
+{/* <div class="text-center">
+            <div class="spinner-border" role="status">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_XgfqoVFulv.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;
+            justify-content:center; align-items:center; display:flex;"  loop  autoplay></lottie-player>
+            
+            </div>
+        </div> */}
 
 $(document).ready(function () {
     function getItem(){
         // loading screen
         $("#product-list").html(`
-            <div class="text-center">
-                Loading...
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_XgfqoVFulv.json"  background="transparent"  speed="1" style="width: 600px; height: 600px; margin-left: 430px;" loop autoplay></lottie-player>
+                </div>
             </div>
         `);
 
@@ -40,7 +51,9 @@ $(document).ready(function () {
         
                 formattedItems += `
                     <div class="product text-center col-lg-3 col-md-4 col-12">
-                        <img class="img-fluid mb-3" src="${item.fields.Image[0].url}" alt="">
+                        <div class="imageZ">
+                        <img class="img-fluid mb-3" src="${item.fields.Image[0].url}" alt="image" class="image">
+                        </div>
                         <h5 class="p-name">${item.fields.Name}</h5>
                         <h4 class="p-price">$${item.fields.Price.toFixed(2)}</h4>
                         <button 
@@ -49,7 +62,7 @@ $(document).ready(function () {
                             data-price="${item.fields.Price}"
                             data-name="${item.fields.Name}"
                             data-thumbnail="${item.fields.Image[0].url}"
-                        >+Add to Cart</button>
+                        ><i class="fa fa-shopping-cart"></i> Add to Cart</button>
                         </div>
                     </div>
                 `

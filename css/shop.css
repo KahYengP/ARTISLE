@@ -11,3 +11,19 @@ body{
     padding-bottom: 80px;
 }
 
+.img-fluid.mb-3{
+    
+    height: 300px;
+}
+
+.imageZ {
+    transition: transform .2s;
+
+}
+
+.imageZ:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+

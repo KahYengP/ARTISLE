@@ -201,24 +201,24 @@ form.sign-in-form {
   font-weight: 600;
   line-height: 1;
   font-size: 1.5rem;
-  color: pink;
+  color: whitesmoke;
 }
 
 .panel p {
   font-size: 0.95rem;
   padding: 0.7rem 0;
-  color: pink;
+  color: whitesmoke;
 }
 
 .btn.transparent {
   margin: 0;
   background: none;
-  border: 2px solid pink;
+  border: 2px solid whitesmoke;
   width: 130px;
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
-  color: pink;
+  color: whitesmoke;
 
 }
 
