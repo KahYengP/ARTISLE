@@ -76,7 +76,7 @@
                         </li>
 
                         <li class="nav-item profile">
-                          <i onclick="handleProfileClick()" class="fal fa-user"></i>
+                          <i class="fal fa-user" id="profileIcon"></i>
                         </li>
 
                 </div>
@@ -85,7 +85,13 @@
     </div>
     <!--end of navigation bar-->
     <!--start of code-->
+
+    <div id="loadingSpinner">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_XgfqoVFulv.json"  background="transparent"  speed="1" style="width: 600px; height: 600px; margin-left: 430px;" loop autoplay></lottie-player>
+    </div>
     <section class="container sproduct my-5 pt-5">
+        <!-- Put loading overlay on top -->
         <div class="row mt-5">
             <div class="col-lg-5 col-md-12 col-12">
                 <img class="img-fluid w-100 pb-1" src="products/paint1-w&n-watercolour.jpg" id="MainImg" alt="">
@@ -105,126 +111,18 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-6 col-md-12 col-12">
-                <h6>Home / T-Shirt</h6>
-                <h3 class="py-4">Men's Fashion T Shirt</h3>
-                <h2>$139.00</h2>
-                <input type="number" value="1">
-                <button class="buy-btn">Add To Cart</button>
+                <h6 id="productCategory"></h6>
+                <h3 class="py-4" id="productName">Item name</h3>
+                <h2 id="productPrice">$0.00</h2>
+                <input type="number" value="1" id="productToBeAdded" min="1">
+                <button class="add-btn" id="addProductButton">Add To Cart</button>
                 <h4 class="mt-5 mb-4">Product Details</h4>
-                <span>The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.</span>
+                <span id="productDescription">No description</span>
             </div>
         </div>
     </section>
-
-        <section id="featured" class="my-5 pb-5">
-            <div class="container text-center mt-5 py-5">
-                <h3>Related Products</h3>
-                <hr class="mx-auto">
-            </div>
-            <div class="row mx-auto container-fluid">
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="products/paint3-mm-acrylic.jpg" alt="img">
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Sport Boots</h5>
-                    <h4 class="p-price">$92.00</h4>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="products/brushes3-arteza.jpg" alt="">
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Sport Boots</h5>
-                    <h4 class="p-price">$92.00</h4>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="products/oil4-pentel-pastels.jpg" alt="">
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Sport Boots</h5>
-                    <h4 class="p-price">$92.00</h4>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="products/pencil2-mm-watercolour.png" alt="">
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Sport Boots</h5>
-                    <h4 class="p-price">$92.00</h4>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-            </div>
-        </section>
-
-
-   
-
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-
-        <script>
-            var MainImg = document.getElementById('MainImg');
-            var smallimg = document.getElementsByClassName('small-img');
-
-            smallimg[0].onclick = function() {
-                MainImg.src = smallimg[0].src;
-            }
-            smallimg[1].onclick = function() {
-                MainImg.src = smallimg[1].src;
-            }
-            smallimg[2].onclick = function() {
-                MainImg.src = smallimg[2].src;
-            }
-            smallimg[3].onclick = function() {
-                MainImg.src = smallimg[3].src;
-            }
-        </script>
-
-
-
-
-
-
-
-        <!-- Newsletter Section Start -->
-        <section class="newsletter">
-            <div class="newsletter-content container">
-                <div class="newsletter-text">
-                    <h2>SIGN UP AND WIN!</h2>
-                    <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
-                </div>
-                <!-- Form -->
-                <form action="">
-                    <input type="email" name="" id="" placeholder="Enter your email..." required>
-                    <input type="submit" value="Subscribe" class="btn">
-                </form>
-            </div>
-        
-            </section>
-        <!-- Newsletter Section End -->
+    
         
         <!-- Footer Start -->
         <section class="footer container">
@@ -265,9 +163,15 @@
         <div class="copyright">
             <p>&#169; ARTISLE All Right Reserved</p>
         </div>
-    
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.3.2/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+        <script src="javascript/utils.js"></script>
+        <script src="javascript/product.js"></script>
 
     </body>
 </html>

@@ -371,7 +371,7 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: hsl(319deg 85% 95% / 70%);
+  background: hsl(0deg 100% 91% / 70%);
   padding: 15px;
   clip-path: circle(0% at 50% 50%);
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -379,7 +379,7 @@ svg {
 .overlay-text h2 {
   font-size: 1.8rem;
   margin-top: 0.5rem;
-  color: #075a23;
+  color: #06772c;
 }
 
 .overlay-text p {

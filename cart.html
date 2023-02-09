@@ -73,7 +73,7 @@
                         </li>
 
                         <li class="nav-item profile">
-                          <i onclick="handleProfileClick()" class="fal fa-user"></i>
+                          <i class="fal fa-user" id="profileIcon"></i>
                         </li>
 
                 </div>
@@ -82,81 +82,6 @@
     </div>
 
     <main class="container">
-        <!--
-         - checkout section
-        -->
-        <!-- <div class="item-flex">
-        <section class="checkout">
-  
-          <h2 class="section-heading">Payment Details</h2>
-  
-          <div class="payment-form">
-  
-            <div class="payment-method">
-  
-              <button class="method selected">
-                <ion-icon name="card"></ion-icon>
-  
-                <span>Credit Card</span>
-  
-                <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
-              </button>
-  
-              <button class="method">
-                <ion-icon name="logo-paypal"></ion-icon>
-  
-                <span>PayPal</span>
-  
-                <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
-              </button>
-  
-            </div>
-  
-            <form action="#">
-  
-              <div class="cardholder-name">
-                <label for="cardholder-name" class="label-default">Cardholder name</label><br>
-                <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
-              </div>
-  
-              <div class="card-number">
-                <label for="card-number" class="label-default">Card number</label><br>
-                <input type="number" name="card-number" id="card-number" class="input-default">
-              </div>
-  
-              <div class="input-flex">
-  
-                <div class="expire-date">
-                  <label for="expire-date" class="label-default">Expiration date</label>
-  
-                  <div class="input-flex">
-  
-                    <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
-                      class="input-default">
-                    /
-                    <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
-                      class="input-default">
-  
-                  </div>
-                </div>
-  
-                <div class="cvv">
-                  <label for="cvv" class="label-default">CVV</label><br>
-                  <input type="number" name="cvv" id="cvv" class="input-default">
-                </div>
-  
-              </div>
-  
-            </form>
-  
-          </div>
-  
-          <button class="btn btn-primary">
-            <b>Pay</b> $ <span id="payAmount">2.15</span>
-          </button>
-  
-        </section>
-   -->
    <div class="row g-3">
 
     <div class="col-md-6">  
@@ -193,7 +118,7 @@
                 <div class="input">
 
                   <i class="fa fa-credit-card"></i>
-                  <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+                  <input type="text" class="form-control" placeholder="0000 0000 0000 0000" required>
                   
                 </div> 
 
@@ -205,7 +130,7 @@
                     <div class="input">
 
                       <i class="fa fa-calendar"></i>
-                      <input type="text" class="form-control" placeholder="MM/YY">
+                      <input type="text" class="form-control" placeholder="MM/YY" required>
                       
                     </div> 
                     
@@ -218,7 +143,7 @@
                     <div class="input">
 
                       <i class="fa fa-lock"></i>
-                      <input type="text" class="form-control" placeholder="000">
+                      <input type="text" class="form-control" placeholder="000" required>
                       
                     </div> 
                     
@@ -422,26 +347,19 @@
 <div class="copyright">
     <p>&#169; ARTISLE All Right Reserved</p>
 </div>
+    <!-- Required JS Packages -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.3.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <script src="javascript/utils.js"></script>
+    <!-- End of Required JS Packages -->
 
-
-
-
-
-
-          <!-- Required JS Packages -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios@1.3.2/dist/axios.min.js"></script>
-
-
-
-        <script src="javascript/cart.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    </body>
-    
-    </html>
+    <script src="javascript/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+</body>
+</html>

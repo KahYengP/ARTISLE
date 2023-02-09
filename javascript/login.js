@@ -1,13 +1,3 @@
-const AIRTABLE_API_KEY = "patRgUH9Rcn6kS52E.bbed58defa5c76d075bc6052ebb1dc7389fff8f290360716d868ae1fd1c53d4b";
-
-const client = axios.create({
-  baseURL: 'https://api.airtable.com/v0/appgzJKZmNGJoa4IH',
-  headers: {
-    'Authorization': `Bearer ${AIRTABLE_API_KEY}`
-  }
-});
-
-
 // create variable for the button 
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
@@ -34,12 +24,13 @@ sign_in_form.addEventListener("submit", (e) => {
   const email = inputs["email"].value;
   const password = inputs["password"].value;
 
-  client.get('/users').then(response => {
+  axiosInstance.get('/users').then(response => {
     const users = response.data.records;
+    console.log(users)
 
-    const user = users.find(user => {
-      return user.fields.email === email && user.fields.password === password;
-    });
+    const user = users.find(user => user.fields.email === email && user.fields.password === password);
+
+    console.log(user)
 
     if (user) {
       alert("Login successful");
