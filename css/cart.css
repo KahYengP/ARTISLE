@@ -47,8 +47,35 @@ main{
     margin-top: 120px;
 }
 
+.btn-primary {
+  --mdb-btn-bg: var(--main-color);
+  --mdb-btn-color: #fff;
+  --mdb-btn-box-shadow: 0 4px 9px -4pxvar(--main-color);
+  --mdb-btn-hover-bg: var(--main-color);
+  --mdb-btn-hover-color: #fff;
+  --mdb-btn-focus-bg: var(--main-color);
+  --mdb-btn-focus-color: #fff;
+  --mdb-btn-active-bg: var(--main-color);
+  --mdb-btn-active-color: #fff;
+}
 
+.btn-primary {
+  --mdb-btn-bg: var(--main-color);
+  --mdb-btn-color: #fff;
+  --mdb-btn-box-shadow: 0 4px 9px -4px var(--main-color);
+  --mdb-btn-hover-bg: #6f412d;
+  --mdb-btn-hover-color: #fff;
+  --mdb-btn-focus-bg: #6f412d;
+  --mdb-btn-focus-color: #fff;
+  --mdb-btn-active-bg: var(--main-color);
+  --mdb-btn-active-color: #fff;
+}
 
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    color: #fff;
+    background-color: #9f6b55;
+    border-color: #6f412d;
+}
 .item-flex{
     display: flex;
     flex-grow: 1;
@@ -141,13 +168,14 @@ main{
     flex-direction:  column;
     justify-content: flex-end;
     padding-top: 0px;
+    
   }
   
   .cart-item-box {
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: auto;
+    margin-bottom: 60px;
   }
   
   .product-card:not(:last-child) { margin-bottom: 20px; }
@@ -386,3 +414,4 @@ main{
     max-width: 1140px;
 }
 }
+
