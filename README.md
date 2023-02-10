@@ -61,8 +61,12 @@ Please note that due to the large asset file size, the website takes longer to l
 
 ### Color Scheme
 
-- Orange Light (#FB774B)
-- Coral (#FF7F50)
+- Dark Green (#023A15)
+- Green (#13642E)
+- Light Pink (#FFC0CB)
+- Pink (#F3A4B5)
+- Light Brown (#9F6B55)
+- Brown (#6F412D)
 - Pantone Black (#101820)
 - White (#FFFFFF)
 
