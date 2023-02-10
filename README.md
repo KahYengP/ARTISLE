@@ -144,7 +144,6 @@ Please note that due to the large asset file size, the website takes longer to l
 - Completed responsive footer
 - Completed sign in & sign up page
 - Completed about us page
-- Fixed drop down bug in navigation bar
 
 8. 25th January 2023
 
@@ -170,6 +169,7 @@ Please note that due to the large asset file size, the website takes longer to l
 
 - Complete setting up of API
 - Sucessfully linked API to sign in & sign up page
+- Completed payment page
 
 13. 3rd February 2023
 
@@ -182,7 +182,29 @@ Please note that due to the large asset file size, the website takes longer to l
 - Begun working on profile page
 - Completed profile page
 
-15.
+15. 5th February 2023
+
+- Updated home page
+- Updated shop page
+- Updated profile page
+
+16. 7th February 2023
+
+- Begun working on shopping cart
+- Successfully linked API to shopping cart
+
+17. 8th February 2023
+
+- Continued working on shopping cart
+- Begun working on product details
+
+18. 9th February 2023
+
+- Completed shopping cart page
+- Completed product details
+
+19. 10th February 2023
+- Completed responsive testing
 
 ## Credits & Resources
 
@@ -190,6 +212,7 @@ _Thank you to Mr Peter Hung for providing us with constructive feedback on this 
 
 ### Links & Resources
 
-1. [Google Document with References]()
-2. [Google Drive with Resources]()
+1. [Google Document with References](https://docs.google.com/document/d/1cF6BlTf86sgIeOfq2CLfaZruJcx8He3EKDfg7EFqCus/edit?usp=sharing)
+2. [Google Drive with Resources](https://drive.google.com/drive/folders/1DcNorj1-Sjh8a-by1GYhdFIscEReOWGi?usp=sharing)
+3. [AirTable](https://airtable.com/shrvm4YT8Q51Up8Gd)
 
