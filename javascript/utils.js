@@ -51,5 +51,13 @@ $(document).ready(function() {
             window.location.href = '/login.html';
         }
     });
+
+    $("#search").submit(function(e) {
+        e.preventDefault();
+
+        console.log("Search submitted");
+        const searchValue = $("#searchValue").val();
+        window.location.href = `/shop.html?searchKeyword=${searchValue}`;
+    });
 });
 

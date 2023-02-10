@@ -37,31 +37,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="shop.html">Shop</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Category
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Paint</a>
-                                <a class="dropdown-item" href="#"> Brushes</a>
-                                <a class="dropdown-item" href="#"> Pencil</a>
-                                <a class="dropdown-item" href="#"> Palette</a>
-                                <a class="dropdown-item" href="#"> Paper</a>
-                                <a class="dropdown-item" href="#"> Oil</a>
-                            
-                            </div>
-                        </li>
+                    
                 
                         <li class="nav-item">
                             <a class="nav-link" href="aboutUs.html">About</a>
                         </li>
 
                         <li class="nav-item search">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <form class="d-flex" role="search" id="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchValue">
                                 <i class="fal fa-search"></i>
-                                </form>
+                            </form>
                         </li>
                         <li class="nav-item search">
                             <i onclick="window.location.href='cart.html';" class="fal fa-shopping-bag"></i>
@@ -84,7 +70,7 @@
             <h5 class="WColor" style="font-weight: 600; padding-bottom: 25px;">NEW ARRIVALS</h5>
             <h1 class="fontG" style="font-size: 70px; color: whitesmoke;"><span style="font-size: 90px;"> Best Price</span><br> This Year </h1>
             <p class="WColor">We provide top-notch materials for artists of all levels<br>  to inspire and enhance your creative endeavors</p>
-            <button class="button_slide slide_down">Shop Now</button>
+            <a href="shop.html"><button class="button_slide slide_down">Shop Now</button></a>
             <!-- <a class="abtn"href="#">
                 <span></span>
                 <span></span>
@@ -114,7 +100,7 @@
                 </div>
                 <h5 class="p-name">Deli Gouache Brush Set of 4s</h5>
                 <h4 class="p-price">$5.50</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                <a href="shop.html"><button class="add-btn"><i class="fa fa-shopping-cart"></i> Go to Shop</button></a>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <div class="imageZ">
@@ -122,7 +108,7 @@
                 </div>
                 <h5 class="p-name">Faber Castell Oil Pastels 12 Colours</h5>
                 <h4 class="p-price"> $4.00</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                <a href="shop.html"><button class="add-btn"><i class="fa fa-shopping-cart"></i> Go to Shop </button></a>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <div class="imageZ">
@@ -130,7 +116,7 @@
                 </div>
                 <h5 class="p-name">Mont Marte Watercolour Pencils 36pc</h5>
                 <h4 class="p-price">$25.00</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                <a href="shop.html"><button class="add-btn"><i class="fa fa-shopping-cart"></i> Go to Shop </button></a>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <div class="imageZ">
@@ -138,7 +124,7 @@
                 </div>
                 <h5 class="p-name">Mont Marte Oval Plastic Palette</h5>
                 <h4 class="p-price">$5.00</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                <a href="shop.html"><button class="add-btn"><i class="fa fa-shopping-cart"></i> Go to Shop </button></a>
             </div>
         </div>
     </section>
@@ -151,7 +137,7 @@
         <div class="container sale">
             <h4 style="padding-bottom: 25px;">CHINESE NEW YEAR SALE</h4>
             <h1 class="fontG" style="color: #0b9444;font-size: 75px;">Mont Marte Collection<br><span class="fontG-DC"> TO 20% OFF </span></h1>
-            <button class="button_slide2 slide_down2">Shop Now</button>
+            <a href="shop.html"><button class="button_slide2 slide_down2">Shop Now</button></a>
         </div>
         <div class="home-img">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -174,7 +160,7 @@
                 </div>
                 <h5 class="p-name">Winsor & Newton Refined Linseed Oil 75ml</h5>
                 <h4 class="p-price">$6.50</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart </button>
+                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Go to Shop </button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <div class="imageZ">
@@ -182,15 +168,16 @@
                 </div>
                 <h5 class="p-name">Faber Castell Watercolor Pencils Box 24 Colours</h5>
                 <h4 class="p-price">$12.00</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                <a href="shop.html"><button class="add-btn"><i class="fa fa-shopping-cart"></i>  Go to Shop </button></a>
             </div>
+
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <div class="imageZ">
                 <img class="img-fluid mb-3" src="products/paint3-mm-acrylic.jpg" alt="">
                 </div>
                 <h5 class="p-name">Mont Marte Premium Pouring Acrylic Paint 240ml</h5>
                 <h4 class="p-price">$10.00</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                <a href="shop.html"><button class="add-btn"><i class="fa fa-shopping-cart"></i>  Go to Shop </button></a>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
                 <div class="imageZ">
@@ -198,7 +185,7 @@
                 </div>
                 <h5 class="p-name">FaberCastell A4 Size Drawing Block 20 Sheets</h5>
                 <h4 class="p-price">$2.00</h4>
-                <button class="add-btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                <a href="shop.html"><button class="add-btn"><i class="fa fa-shopping-cart"></i>  Go to Shop </button></a>
             </div>
         </div>
     </section>

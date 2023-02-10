@@ -81,6 +81,7 @@ $(document).ready(function () {
 
   totalCalc();
 
+  //remove items from the shopping cart
   $("#summary-products").on("click", ".product-close-btn", function () {
     const id = $(this).data("id");
     const newCart = cart.filter((item) => item.id !== id);
@@ -88,6 +89,8 @@ $(document).ready(function () {
     location.reload();
   });
 
+
+  
   $("#summary-products").on("click", "#increment", function () {
     const id = $(this).data("id");
     const newCart = cart.map((item) => {
@@ -114,7 +117,49 @@ $(document).ready(function () {
   });
 
   $("#checkout-btn").click(function () {
-    alert("Thank you for your purchase!");
+    if (cart.length === 0) {
+      alert("Please add some items to cart");
+      return;
+    }
+
+    const userId = localStorage.getItem("user");
+
+    axiosInstance.get(`/users/${userId}`).then((res) => {
+      const userData = res.data;
+      console.log(userData);
+
+      const prevOrders = JSON.parse(userData.fields.orders || "[]");
+
+      const newOrders = [
+        ...prevOrders,
+        {
+          checkoutDate: new Date().toISOString(),
+          cart,
+          total: Number($("#total").text()),
+          pointsAccumulated: Math.ceil(Number($("#total").text()) * 0.1),
+        },
+      ];
+      
+      const points = newOrders.reduce((acc, order) => {
+        return acc + order.pointsAccumulated;
+      }, 0);
+
+      axiosInstance.patch("/users", {
+        records: [
+          {
+            id: userData.id,
+            fields: {
+              orders: JSON.stringify(newOrders),
+              points,
+            },
+          },
+        ]
+      }).then((res) => {
+        console.log(res);
+      });
+    });
+
+    alert("Thank you for your purchase!, Points have been updated");
     // API to save cart to airtable to do
     localStorage.removeItem("cart");
     location.reload();

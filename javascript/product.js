@@ -14,22 +14,22 @@ $(document).ready(function() {
         console.log(response.data);
         var item = response.data;
 
-        $("#productCategory").html(item.fields.Category);
-        $("#productName").html(item.fields.Name);
-        $("#productPrice").html(`$${item.fields.Price}`);
-        $("#productDescription").html(item.fields.Description);
+        $("#productCategory").html(item.fields.category);
+        $("#productName").html(item.fields.name);
+        $("#productPrice").html(`$${item.fields.price}`);
+        $("#productDescription").html(item.fields.description);
         $("#addProductButton").attr("data-id", item.id);
-        $("#addProductButton").attr("data-price", item.fields.Price);
-        $("#addProductButton").attr("data-name", item.fields.Name);
-        $("#addProductButton").attr("data-thumbnail", item.fields.Image[0].url);
-        $("#MainImg").attr("src", item.fields.Image[0].url);
+        $("#addProductButton").attr("data-price", item.fields.price);
+        $("#addProductButton").attr("data-name", item.fields.name);
+        $("#addProductButton").attr("data-thumbnail", item.fields.image[0].url);
+        $("#MainImg").attr("src", item.fields.image[0].url);
 
         let smallImgHtml = "";
 
-        for (let i = 0; i < item.fields.Image.length; i++) {
+        for (let i = 0; i < item.fields.image.length; i++) {
             smallImgHtml += `
                 <div class="small-img-col">
-                    <img src="${item.fields.Image[i].url}" width="100%" class="small-img" alt="">
+                    <img src="${item.fields.image[i].url}" width="100%" class="small-img" alt="">
                 </div>
             `;
         }

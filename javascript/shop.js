@@ -35,17 +35,17 @@ $(document).ready(function () {
                     <div class="product text-center col-lg-3 col-md-4 col-12">
                         <a href="/product-details.html?itemId=${item.id}">
                             <div class="imageZ">
-                            <img class="img-fluid mb-3" src="${item.fields.Image[0].url}" alt="image" class="image">
+                            <img class="img-fluid mb-3" src="${item.fields.image[0].url}" alt="image" class="image">
                             </div>
                         </a>
-                        <h5 class="p-name">${item.fields.Name}</h5>
-                        <h4 class="p-price">$${item.fields.Price.toFixed(2)}</h4>
+                        <h5 class="p-name">${item.fields.name}</h5>
+                        <h4 class="p-price">$${item.fields.price.toFixed(2)}</h4>
                         <button 
                             class="add-btn" 
                             data-id="${item.id}"
-                            data-price="${item.fields.Price}"
-                            data-name="${item.fields.Name}"
-                            data-thumbnail="${item.fields.Image[0].url}"
+                            data-price="${item.fields.price}"
+                            data-name="${item.fields.name}"
+                            data-thumbnail="${item.fields.image[0].url}"
                         ><i class="fa fa-shopping-cart"></i> Add to Cart</button>
                         </div>
                     </div>

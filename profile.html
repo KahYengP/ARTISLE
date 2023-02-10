@@ -37,29 +37,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="shop.html">Shop</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Category
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Paint</a>
-                                <a class="dropdown-item" href="#"> Brushes</a>
-                                <a class="dropdown-item" href="#"> Pencil</a>
-                                <a class="dropdown-item" href="#"> Palette</a>
-                                <a class="dropdown-item" href="#"> Paper</a>
-                                <a class="dropdown-item" href="#"> Oil</a>
-                            
-                            </div>
-                        </li>
+                    
                 
                         <li class="nav-item">
                             <a class="nav-link" href="aboutUs.html">About</a>
                         </li>
 
                         <li class="nav-item search">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <form class="d-flex" role="search" id="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchValue">
                                 <i class="fal fa-search"></i>
                                 </form>
                         </li>
@@ -89,9 +75,8 @@
           <div class="row">
             <div class="col-lg-7 col-md-10">
               <h1 class="display-2 text-white" style="font-family: Genty; font-size: 65px; -webkit-text-stroke-width: 0.1px;
-              -webkit-text-stroke-color: rgb(0, 0, 0);">Hello Winter</h1>
-              <p class="text-white mt-0 mb-5">This is your profile page. You can update your personal particulars conveniently.</p>
-    
+              -webkit-text-stroke-color: rgb(0, 0, 0);" id="user-intro">Hello!</h1>
+              <p class="text-white mt-0 mb-5">This is your profile page. You can see your personal information particulars conveniently.</p>
             </div>
           </div>
         </div>
@@ -123,11 +108,11 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <h3>
-                    Winter <span class="font-weight-light">, 22</span>
+                  <h3 id="user-name">
+                    Winter
                   </h3>
                   <div class="h5 font-weight-300">
-                    <i class="ni location_pin mr-2"></i>Singapore
+                    Points <span id="user-points">0</span>
                   </div>
                   <div class="h5 mt-4" id="logoutButton">
                     <a href="#!" class="btn btn-info1">Log Out</a>
@@ -150,16 +135,11 @@
                   <h6 class="heading-small text-muted mb-4">User information</h6>
                   <div class="pl-lg-4">
                     <div class="row">
-                      <div class="col-lg-6">
-                        <div class="form-group focused">
-                          <label class="form-control-label" for="input-phonenumber">Phone Number</label>
-                          <div type="text" id="input-phonenumber" class="form-control form-control-alternative"> +65 6543432</div>
-                        </div>
-                      </div>
+                      
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-email">Email address</label>
-                          <div type="text" id="input-email" class="form-control form-control-alternative"> winter@gmail.com</div>
+                          <div type="text" id="user-email" class="form-control form-control-alternative"> winter@gmail.com</div>
                         </div>
                       </div>
                     </div>
@@ -167,13 +147,13 @@
                       <div class="col-lg-6">
                         <div class="form-group focused">
                           <label class="form-control-label" for="input-first-name">First name</label>
-                          <div type="text" id="input-first-name" class="form-control form-control-alternative"> Winter</div>
+                          <div type="text" id="user-first-name" class="form-control form-control-alternative"> Winter</div>
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group focused">
                           <label class="form-control-label" for="input-last-name">Last name</label>
-                          <div type="text" id="input-last-name" class="form-control form-control-alternative"> Kim </div>
+                          <div type="text" id="user-last-name" class="form-control form-control-alternative"> Kim </div>
                         </div>
                       </div>
                     </div>
@@ -255,6 +235,7 @@
        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
        <script src="javascript/utils.js"></script>
        <!-- End of Required JS Packages -->
+      <script src="javascript/profile.js"></script>
 </body>
 
 </html>
