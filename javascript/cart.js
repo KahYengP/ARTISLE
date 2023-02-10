@@ -150,8 +150,8 @@ $(document).ready(function () {
           {
             id: userData.id,
             fields: {
-              orders: JSON.stringify(newOrders),
-              points,
+            orders: JSON.stringify(newOrders),
+            points,
             },
           },
         ]
