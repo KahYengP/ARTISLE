@@ -376,8 +376,8 @@ form.sign-in-form {
 @media (max-width: 570px) {
   form {
     padding: 0 1.5rem;
-    padding-bottom: 25rem;
-    padding-top: 15rem;
+    /* padding-bottom: 25rem;
+    padding-top: 15rem; */
   }
 
   .lotties {

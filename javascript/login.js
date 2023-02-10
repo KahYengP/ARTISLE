@@ -73,7 +73,7 @@ sign_up_form.addEventListener("submit", (e) => {
   }
 
   //validation check whether is sign up successful or not 
-  client.post('/users', payload).then(response => {
+  axiosInstance.post('/users', payload).then(response => {
     console.log(response);
     alert("Sign up successful, Please login");
     container.classList.remove("sign-up-mode");

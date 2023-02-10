@@ -5,7 +5,7 @@ $(document).ready(function () {
             <div class="d-flex justify-content-center">
                 <div class="spinner-border" role="status">
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_XgfqoVFulv.json"  background="transparent"  speed="1" style="width: 600px; height: 600px; margin-left: 430px;" loop autoplay></lottie-player>
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_XgfqoVFulv.json"  background="transparent"  speed="1" style="width: 600px; height: 600px; margin-left: 350px;" loop autoplay></lottie-player>
                 </div>
             </div>
         `);

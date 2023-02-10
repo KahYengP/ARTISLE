@@ -90,7 +90,7 @@ $(document).ready(function () {
   });
 
 
-  
+  //increase quantity
   $("#summary-products").on("click", "#increment", function () {
     const id = $(this).data("id");
     const newCart = cart.map((item) => {
@@ -103,6 +103,7 @@ $(document).ready(function () {
     location.reload();
   });
 
+  //decrease quantity 
   $("#summary-products").on("click", "#decrement", function () {
 
     const id = $(this).data("id");
