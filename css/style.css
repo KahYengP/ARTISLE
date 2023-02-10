@@ -194,6 +194,7 @@ hr {
 .img-fluid {
   max-width: auto;
   height: 250px;
+  padding-top: 15px;
 }
 
   /* Mobile Nav */

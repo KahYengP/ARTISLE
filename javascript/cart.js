@@ -160,7 +160,7 @@ $(document).ready(function () {
       });
     });
 
-    alert("Thank you for your purchase!, Points have been updated");
+    alert("Thank you for your purchase! Your points have been updated");
     // API to save cart to airtable to do
     localStorage.removeItem("cart");
     location.reload();
